@@ -3,8 +3,6 @@ import { initialState } from './reducer';
 
 const selectPageOne = state => state.pageOne || initialState;
 
-console.log('selectors')
-
 const makeSelectMembersList = () =>
   createSelector(selectPageOne, subState =>
     subState.get('membersList')

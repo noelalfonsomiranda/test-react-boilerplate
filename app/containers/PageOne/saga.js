@@ -4,8 +4,6 @@ import { resultMembersList } from './actions';
 
 import request from 'utils/request';
 
-console.log('saga')
-
 export function* getMembersList() {
   try {
     const requestURL = yield call(request, `http://dummy.restapiexample.com/api/v1/employees`, {

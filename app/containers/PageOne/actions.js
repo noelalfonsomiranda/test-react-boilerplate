@@ -1,8 +1,6 @@
 import { createActions } from 'redux-actions'
 import { GET_MEMBERS_LIST, RESULT_MEMBERS_LIST } from './constants';
 
-console.log('actions')
-
 const ReduxActions = createActions(
   {},
 
